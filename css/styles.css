@@ -8,6 +8,8 @@
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -17,6 +19,28 @@
 
 .logo-color {
   color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -29,11 +53,39 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  outline: 2px solid tomato;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*========== Header ===============*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
 .logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -41,6 +93,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
+
   color: #000000;
 }
 
@@ -52,9 +106,22 @@ body {
   color: var(--title-color);
 }
 
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
 }
 
 .mail-link {
@@ -85,14 +152,16 @@ body {
 
 /*============= Hero section ===========*/
 .hero-section {
+  text-align: center;
   background-color: #2f303a;
 }
 
 .hero-section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--link-white-color);
@@ -103,6 +172,7 @@ body {
   padding: 10px 32px;
   display: inline-block;
   min-width: 200px;
+  border: 1px solid transparent;
 
   font-weight: 700;
   font-size: 16px;
@@ -125,11 +195,23 @@ body {
 
 /*============== Our priorities ==========*/
 
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.priorities-items:not(:last-child) {
+  margin-right: 50px;
+}
+
 .text-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 10px;
+
   color: var(--title-color);
 }
 
@@ -138,6 +220,9 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+
   color: var(--link-grey-color);
 }
 
@@ -149,12 +234,50 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+
+  margin-bottom: 30px;
+}
+
+.work-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.work-items {
+  padding-bottom: 94px;
+  margin-left: -30px;
+  margin-top: -10px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.work-img {
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 /*=============== Team ==============*/
 
 .team-section {
   background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+}
+
+.team-items {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.team-photo {
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.team-position {
+  background-color: var(--link-white-color);
+  padding-top: 30px;
 }
 
 .name {
@@ -163,6 +286,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: var(--title-color);
 }
 
@@ -180,13 +304,23 @@ body {
   background-color: #2f303a;
 }
 
+.footer-container {
+  padding-top: 60px;
+}
+
 .logo-link-footer {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
   color: var(--link-white-color);
+}
+
+.footer-list {
+  padding-bottom: 60px;
 }
 
 .map-link {
@@ -194,6 +328,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
+
   color: var(--link-white-color);
   font-style: normal;
 }
@@ -205,6 +341,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .map-link:hover,
