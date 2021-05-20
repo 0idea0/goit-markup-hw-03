@@ -299,6 +299,7 @@ body {
 .team-position {
   background-color: var(--link-white-color);
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .name {
@@ -322,12 +323,9 @@ body {
 
 /*============== Footer ============*/
 .footer {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.footer-container {
-  padding-top: 60px;
 }
 
 .logo-link-footer {
@@ -402,7 +400,7 @@ body {
   align-items: center;
   min-width: 128px;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
